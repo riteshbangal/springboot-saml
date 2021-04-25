@@ -1,0 +1,12 @@
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-alias: springboot-saml
+    key-store: classpath:saml/springboot-saml-keystore.jks
+    key-store-password: secret
+
+security:
+  saml2:
+    metadata-url: https://dev-46041526.okta.com/app/exkn8y2zpNBaE6iRj5d6/sso/saml/metadata
+
